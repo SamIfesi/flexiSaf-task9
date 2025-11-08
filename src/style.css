@@ -9,3 +9,31 @@
   --color-text: #213547;
   --color-muted: #888888;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.key {
+  transition: transform 0.07s ease;
+}
+.key.playing {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px yellow;
+}
+.drum-machine {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+.key {
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+}

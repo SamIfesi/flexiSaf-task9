@@ -1,13 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>drum-machine</title>
+    <title>Drum Machine</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main class="keys">
+      <button data-key="65" class="key">
+        <span>A</span>
+        <span class="sound">clap</span>
+      </button>
+      <button data-key="83" class="key">
+        <span>S</span>
+        <span class="sound">hihat</span>
+      </button>
+      <button data-key="68" class="key">
+        <span>D</span>
+        <span class="sound">kick</span>
+      </button>
+      <button data-key="70" class="key">
+        <span>F</span>
+        <span class="sound">openhat</span>
+      </button>
+      <button data-key="71" class="key">
+        <span>G</span>
+        <span class="sound">boom</span>
+      </button>
+      <button data-key="72" class="key">
+        <span>H</span>
+        <span class="sound">ride</span>
+      </button>
+      <button data-key="74" class="key">
+        <span>J</span>
+        <span class="sound">snare</span>
+      </button>
+      <button data-key="75" class="key">
+        <span>K</span>
+        <span class="sound">tom</span>
+      </button>
+      <button data-key="76" class="key">
+        <span>L</span>
+        <span class="sound">tink</span>
+      </button>
+    </main>
+
+    <audio data-key="65" src="sounds/Heater-6.mp3"></audio>
+    <audio data-key="83" src="sounds/Heater-1.mp3"></audio>
+    <audio data-key="68" src="sounds/Give_us_a_light.mp3"></audio>
+    <audio data-key="70" src="sounds/Dsc_Oh.mp3"></audio>
+    <audio data-key="71" src="sounds/Dry_Ohh.mp3"></audio>
+    <audio data-key="72" src="sounds/Chord_3.mp3"></audio>
+    <audio data-key="74" src="sounds/Cev_H2.mp3"></audio>
+    <audio data-key="75" src="sounds/Brk_Snr.mp3"></audio>
+    <audio data-key="76" src="sounds/Bld_H1.mp3"></audio>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

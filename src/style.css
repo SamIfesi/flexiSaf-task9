@@ -49,9 +49,14 @@ body {
   margin: 0.5rem;
 }
 @media (max-width: 33rem) {
+  body{
+  height: auto;
+    
+  }
   .keys {
     grid-template-columns: 1fr;
     width: 100%;
+    border-radius: 0;
   }
   .key {
     font-size: 2rem;
